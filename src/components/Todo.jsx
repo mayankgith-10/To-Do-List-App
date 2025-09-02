@@ -49,7 +49,7 @@ const Todo = () => {
   }, [todoList]);
 
   return (
-    <div className="bg-white place-self-center w-[345px] md:w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-xl">
+    <div className="bg-white place-self-center md:w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-xl">
       {/* title */}
       <div className="flex items-center mt-7 gap-2">
         <img className="w-8" src={image} alt="" />
@@ -66,7 +66,7 @@ const Todo = () => {
         />
         <button
           onClick={add}
-          className="text-nowrap px-2 border-none rounded-full bg-orange-600 w-32 h-14 text-white text-lg font-medium cursor-pointer"
+          className="text-nowrap px-2 border-none rounded-full bg-orange-600 w-fit md:w-32 h-14 text-white text-lg font-medium cursor-pointer"
         >
           ADD +
         </button>
